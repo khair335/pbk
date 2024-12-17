@@ -174,9 +174,15 @@
             <div class="bundle-options-2">
               <h2>Choose Your Package</h2>
               <div class="bundle-options-2__container">
-                <div class="bundle-options-2__item">
-                  <button class="bundle-options-2__item-radio">
-                    <input type="radio" name="package" id="package-1">
+                <div
+                class="bundle-options-2__item"
+                data-product-quantity=" 1"
+                data-bundle="1"
+                data-discount="55%"
+                data-original="$149.95"
+                  data-price="$69.95" data-description="1x Ryoku EMS Mat" data-savings="$80.00" >
+                  <button class=" bundle-options-2__item-radio">
+                  <input type="radio" name="package" id="package-1">
                   </button>
                   <div class="bundle-options-2__item-image">
                     <img src="./src/assets/images/p1.png" alt="1x Ryoku EMS Mat">
@@ -210,9 +216,11 @@
 
                   </div>
                 </div>
-                <div class="bundle-options-2__item best-seller">
+                <div class="bundle-options-2__item best-seller" data-bundle="2" data-product-quantity="2"
+                  data-price="$66.45" data-discount="55%" data-original="$299.95" data-description="2x Ryoku EMS Mat"
+                  data-savings="$100.00">
                   <button class="bundle-options-2__item-radio">
-                    <input type="radio" name="package" id="package-2" checked>
+                    <input type="radio" name="package" id="package-2" >
                   </button>
                   <div class="bundle-options-2__item-image">
                     <img src="./src/assets/images/p1.png" alt="1x Ryoku EMS Mat">
@@ -246,7 +254,9 @@
 
                   </div>
                 </div>
-                <div class="bundle-options-2__item">
+                <div class="bundle-options-2__item" data-bundle="3" data-product-quantity="3" data-price="$59.46"
+                  data-discount="60%" data-original="$449.95" data-description="3x Ryoku EMS Mat"
+                  data-savings="$150.00">
                   <button class="bundle-options-2__item-radio">
                     <input type="radio" name="package" id="package-3">
                   </button>
@@ -257,17 +267,17 @@
 
 
                     <div class="bundle-options-2__item-content-container">
-                    <div class="bundle-options-2__item-content-title">
-                      <h3 class="bundle-options-2__item-title">3x</h3>
-                      <p class="bundle-options-2__item-description">Ryoku EMS Mat</p>
-                    </div>
-                    <div class="bundle-options-2__item-discount-container">
-                      <div class="bundle-options-2__item-discount">
-                        <img src="./src/assets/images/currency.svg" alt="check" srcset="">
-                        <p>55%</p>
+                      <div class="bundle-options-2__item-content-title">
+                        <h3 class="bundle-options-2__item-title">3x</h3>
+                        <p class="bundle-options-2__item-description">Ryoku EMS Mat</p>
+                      </div>
+                      <div class="bundle-options-2__item-discount-container">
+                        <div class="bundle-options-2__item-discount">
+                          <img src="./src/assets/images/currency.svg" alt="check" srcset="">
+                          <p>55%</p>
+                        </div>
                       </div>
                     </div>
-</div>
 
                     <div class="bundle-options-2__item-price">
                       <p class="bundle-options-2__item-price-original"><del>$203.95</del></p>
@@ -283,7 +293,9 @@
 
                   </div>
                 </div>
-                <div class="bundle-options-2__item">
+                <div class="bundle-options-2__item" data-bundle="4" data-product-quantity="4" data-price="$52.46"
+                  data-original="$299.95" data-discount="60%" data-description="4x Ryoku EMS Mat"
+                  data-savings="$200.00">
                   <button class="bundle-options-2__item-radio">
                     <input type="radio" name="package" id="package-4">
                   </button>
@@ -293,16 +305,16 @@
                   <div class="bundle-options-2__item-content">
 
                     <div class="bundle-options-2__item-content-container">
-                    <div class="bundle-options-2__item-content-title">
-                      <h3 class="bundle-options-2__item-title">4x</h3>
-                      <p class="bundle-options-2__item-description">Ryoku EMS Mat</p>
-                    </div>
-                    <div class="bundle-options-2__item-discount-container">
-                      <div class="bundle-options-2__item-discount">
-                        <img src="./src/assets/images/currency.svg" alt="check" srcset="">
-                        <p>55%</p>
+                      <div class="bundle-options-2__item-content-title">
+                        <h3 class="bundle-options-2__item-title">4x</h3>
+                        <p class="bundle-options-2__item-description">Ryoku EMS Mat</p>
                       </div>
-                    </div>
+                      <div class="bundle-options-2__item-discount-container">
+                        <div class="bundle-options-2__item-discount">
+                          <img src="./src/assets/images/currency.svg" alt="check" srcset="">
+                          <p>55%</p>
+                        </div>
+                      </div>
                     </div>
 
                     <div class="bundle-options-2__item-price">
@@ -322,7 +334,7 @@
                 </div>
               </div>
             </div>
-            <div class="order-summary">
+            <div id="order-summary-2" class="order-summary">
               <div class="order-summary__total-savings">
                 <h2>Total Savings</h2>
                 <p>$157.97</p>
@@ -487,7 +499,7 @@
                       <label>Card Number</label>
                       <img src="./src/assets/images/lock-3.svg fill.svg" alt="card number" srcset="">
                     </div>
-                    <p class="error-message" id="card-number-error">Please enter a valid card number</p>
+                    <p class="error-message" id="card-number-error">Please check your Credit Card Number</p>
                   </div>
                   <div class="payment-method__details-item-row">
                     <div class="payment-method__details-item-container">
@@ -495,7 +507,7 @@
                         <input type="text" placeholder=" " name="expiration-date">
                         <label>Expiration (MM/YY)</label>
                       </div>
-                      <p class="error-message" id="expiration-error">Please enter a valid expiration date</p>
+                      <p class="error-message" id="expiration-error">Please check your Credit Card Expiration Date</p>
                     </div>
                     <div class="payment-method__details-item-container">
                       <div id="security-code" class="payment-method__details-item input-container">
@@ -503,7 +515,7 @@
                         <label>Security Code</label>
                         <img src="./src/assets/images/question-card.svg fill.svg" alt="card number" srcset="">
                       </div>
-                      <p class="error-message" id="security-code-error">Please enter a valid security code</p>
+                      <p class="error-message" id="security-code-error">This is not a valid security code</p>
                     </div>
                   </div>
                 </div>
@@ -1457,7 +1469,7 @@
   <!-- Main JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="./src/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.8/js/intlTelInput.min.js"></script>
 
   <!-- <script>
     $(document).ready(function () {
