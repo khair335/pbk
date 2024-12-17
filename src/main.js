@@ -50,14 +50,12 @@ $(document).ready(function() {
       const fillWidth = (stockCount / 55) * 100; // Calculate fill width percentage
       stockBarFillElement.css('width', fillWidth + '%');
 
-      if (stockCount === 0) {
-        alert('Stock out!');
-      }
+
     }
   }
 
   // Simulate stock decrement every 30 seconds
-  setInterval(updateStock, 3000);
+  setInterval(updateStock, 30000);
 });
 
 // Show popup
