@@ -990,7 +990,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  gap: 10px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -1037,9 +1037,34 @@ body {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  transition: all 0.3s ease-in-out;
 
 }
-
+.bundle-option.best-deal.selected .bundle-option__best-deal,
+.bundle-option.best-deal:hover .bundle-option__best-deal{
+  background-color: #1500D1;
+  border: 1px solid #1500D1;
+  color: #fff;
+}
+.bundle-option.best-deal .best-deal-text-selected-hover,
+.bundle-option.best-deal .bundle-option__best-deal img,
+.bundle-option.best-deal .bundle-option__content-price-extra{
+  display: none;
+}
+.bundle-option.best-deal.selected .best-deal-text-selected-hover,
+.bundle-option.best-deal.selected .bundle-option__best-deal img,
+.bundle-option.best-deal.selected .bundle-option__content-price-extra{
+  display: block;
+}
+.bundle-option.best-deal.selected  .best-deal-text,
+.bundle-option.best-deal:hover .best-deal-text{
+ display: none;
+}
+.bundle-option.best-deal:hover .best-deal-text-selected-hover,
+.bundle-option.best-deal:hover .bundle-option__best-deal img,
+.bundle-option.best-deal:hover .bundle-option__content-price-extra{
+  display: block;
+}
 .bundle-option.most-popular .bundle-option__most-popular {
   background-color: #1500D1;
   border: 1px solid #1500D1;
@@ -1060,7 +1085,7 @@ body {
   text-decoration-skip-ink: none;
 
 }
-
+.bundle-option.best-deal .bundle-option__best-deal img,
 .bundle-option.most-popular .bundle-option__most-popular img {
   width: 14px;
   height: 16px;
@@ -1079,7 +1104,7 @@ body {
   cursor: pointer;
 }
 
-.bundle-option.selected .bundle-option__content-button img {
+.bundle-option .bundle-option__content-button img {
   width: 16px;
   height: 13px;
 
@@ -3854,7 +3879,7 @@ select {
     max-width: 60px;
     width: 100%;
     height: 60px;
-
+    transition: all 0.3s ease-in-out;
 
   }
 
