@@ -64,7 +64,17 @@ $(document).ready(function () {
       stockCount = Math.max(stockCount - decrement, minStockLeft); // Ensure stock doesn't go below minStockLeft
       stockCountElement.text(stockCount);
       const fillWidth = ((maxStockCount - stockCount) / maxStockCount) * 100; // Calculate fill width percentage
-      stockBarFillElement.css('width', fillWidth + '%');
+      stockBarFillElement.css({
+        'width': fillWidth + '%',
+        'background': 'linear-gradient(90deg, #F8A935 0%, #D90700 43.5%, #1500D1 61.5%)',
+        'height': '100%'
+      });
+
+      setTimeout(() => {
+        stockBarFillElement.css({
+          'transition': 'width 5s ease-in-out'
+        });
+      }, 1000);
 
       // if (stockCount === minStockLeft) {
       //   alert('Stock is low!');
@@ -557,3 +567,5 @@ restrictSecurityCode(securityCodeInput);
 setInterval(() => {
   showPurchaseNotification();
 }, 10000);
+
+

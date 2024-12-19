@@ -810,9 +810,7 @@ body {
 }
 
 .stock-bar__fill {
-  background: linear-gradient(90deg, #F8A935 0%, #D90700 43.5%, #1500D1 61.5%);
 
-  height: 100%;
 
 }
 
@@ -2335,27 +2333,24 @@ select {
 
 /* Read Our latest Comment/Feedback  */
 
-/* body {
-  margin: 0;
-  padding: 0;
+
+/* #stock-bar-fill {
+
+
 } */
-#stock-bar-fill {
-  transition: width 9s ease-in-out;
-  /* Increased duration for even slower animation */
-}
 
 .read-comment-feedback__container-wrapper {
   display: flex;
   flex-direction: column;
   height: 1493px;
-  /* Adjust as needed */
+
   overflow: hidden;
 }
 
 .marqueeTop,
 .marqueeBottom {
   height: 1200px;
-  /* Adjust as needed */
+
   overflow: hidden;
 }
 

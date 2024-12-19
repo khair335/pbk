@@ -809,12 +809,12 @@ body {
 
 }
 
-.stock-bar__fill {
+/* .stock-bar__fill {
   background: linear-gradient(90deg, #F8A935 0%, #D90700 43.5%, #1500D1 61.5%);
 
   height: 100%;
 
-}
+} */
 
 .special-bundle__left-time {
   background-color: #F8F8F8;
