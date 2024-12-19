@@ -302,7 +302,7 @@ $(document).ready(function () {
   function updateFloatingLabel() {
     const isMobile = window.innerWidth <= 768;
     if (phoneInput.value || document.activeElement === phoneInput) {
-      floatingLabel.style.top = '10px';
+      floatingLabel.style.top = '14px';
       floatingLabel.style.fontSize = isMobile ? '10px' : '12px';
     } else {
       floatingLabel.style.top = '36%';
@@ -405,7 +405,7 @@ $(document).ready(function () {
     if (warrantyCheckbox.is(':checked')) {
       totalWarrantyCost = warrantyCostPerUnit * quantity;
       totalPrice += totalWarrantyCost;
-      description += " + Warranty"; // Append " + Warranty" to the description
+     // Append " + Warranty" to the description
     }
 
     // Update order summary for #order-summary-2
@@ -502,7 +502,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (warrantyCheckbox.checked) {
       totalWarrantyCost = warrantyCostPerUnit * quantity;
       totalPrice += totalWarrantyCost;
-      description += " + Warranty"; // Append " + Warranty" to the description
+       // Append " + Warranty" to the description
     }
 
     // Update order summary
@@ -567,6 +567,28 @@ restrictSecurityCode(securityCodeInput);
 setInterval(() => {
   showPurchaseNotification();
 }, 10000);
+
+$(document).ready(function () {
+  $('.payment-method__details-item input').each(function () {
+    const $input = $(this);
+    const $parent = $input.closest('.payment-method__details-item');
+
+    // Add 'active' class if input is focused or not empty
+    function toggleActiveClass() {
+      if ($input.is(':focus') || $input.val().trim() !== '') {
+        $parent.addClass('active');
+      } else {
+        $parent.removeClass('active');
+      }
+    }
+
+    // Bind events
+    $input.on('focus blur input', toggleActiveClass);
+
+    // Initial check
+    toggleActiveClass();
+  });
+});
 
 
 
