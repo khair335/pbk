@@ -1,14 +1,25 @@
-  function showPurchaseNotification() {
+let notificationShown = false;
+
+function showPurchaseNotification() {
+  if (!notificationShown) {
     $('.purchase-notification').show('slide', { direction: 'left' }, 500);
+
+    // Close the notification after 5 seconds
     setTimeout(() => {
       $('.purchase-notification').hide('slide', { direction: 'left' }, 500);
-    }, 10000);
-  }
+    }, 5000);
 
-  // Simulate purchase button click
-  $('#purchase-notification-btn').click(function () {
-    showPurchaseNotification();
-  });
+    notificationShown = true; // Set the flag to true after showing the notification
+  }
+}
+
+setTimeout(() => {
+  showPurchaseNotification();
+}, 5000);
+// Simulate purchase button click
+$('#purchase-notification-btn').click(function () {
+  showPurchaseNotification();
+});
 
   // Function to hide the notification
   $('.purchase-notification__close').click(function () {
@@ -110,7 +121,7 @@ $(document).ready(function () {
     const summaryContent = $('.summary-content');
     const orderSummaryContainer = $('.order-summary__container');
     const isMobile = window.innerWidth < 768;
-    const marginTopValue = isMobile ? '-62.2px' : '-99.2px';
+    const marginTopValue = isMobile ? '-62.2px' : '-82px';
 
     if (summaryContent.is(':visible')) {
       // Collapse the summary content

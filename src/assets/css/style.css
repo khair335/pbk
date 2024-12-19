@@ -773,7 +773,7 @@ body {
 }
 
 .stock-info {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
 
@@ -822,7 +822,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 23px;
+  margin-bottom: 8px;
 }
 
 .special-bundle__left-time img {
@@ -846,7 +846,7 @@ body {
 .bundle-options {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 12px;
 }
 
 .bundle-option {
@@ -1118,6 +1118,7 @@ body {
   border: 0.81px solid #C5C5C5;
   border-radius: 4px;
   position: relative;
+  background-color: #f9f9f9;
 }
 
 
@@ -1130,7 +1131,7 @@ body {
 
 .summary-content {
   display: none;
-  transition: max-height 0.1s ease-out;
+  transition: max-height .9s linear;
   overflow: hidden;
 }
 
@@ -1179,6 +1180,7 @@ body {
   border-bottom: 0.81px solid #C5C5C5;
   position: relative;
   z-index: 1;
+  height: 82px;
 }
 
 .order-summary__total-savings h2 {
@@ -1217,6 +1219,7 @@ body {
   border-bottom-right-radius: 4px;
   position: relative;
   z-index: 3;
+  transition: all .05s ease-in-out;
 
 }
 
@@ -2857,7 +2860,7 @@ select {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .read-comment-feedback__item-container-02 {
     display: none;
   }
