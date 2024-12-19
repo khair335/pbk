@@ -1,6 +1,7 @@
 let notificationShown = false;
 
 function showPurchaseNotification() {
+  console.log("showPurchaseNotification");
   if (!notificationShown) {
     $('.purchase-notification').show('slide', { direction: 'left' }, 500);
 
@@ -104,17 +105,17 @@ $(document).ready(function () {
 });
 
 // Show popup
-// $(document).ready(function() {
-//   // Show popup after 10 seconds
-//   setTimeout(function() {
-//     $('.show-popup').fadeIn(100);
-//   }, 10000);
+$(document).ready(function() {
+  // Show popup after 10 seconds
+  setTimeout(function() {
+    $('.show-popup').fadeIn(100);
+  }, 10000);
 
-//   // Close popup
-//   $('.show-popup__close').click(function() {
-//     $('.show-popup').fadeOut(100);
-//   });
-// });
+  // Close popup
+  $('.show-popup__close').click(function() {
+    $('.show-popup').fadeOut(100);
+  });
+});
 
 $(document).ready(function () {
   $('.toggle-label').click(function () {
@@ -313,10 +314,10 @@ $(document).ready(function () {
   function updateFloatingLabel() {
     const isMobile = window.innerWidth <= 768;
     if (phoneInput.value || document.activeElement === phoneInput) {
-      floatingLabel.style.top = '14px';
-      floatingLabel.style.fontSize = isMobile ? '10px' : '12px';
+      floatingLabel.style.top =  isMobile ? '24px' : '14px';
+      floatingLabel.style.fontSize = isMobile ? '14px' : '14px';
     } else {
-      floatingLabel.style.top = '36%';
+      floatingLabel.style.top = isMobile ? '45%' : '36%';
       floatingLabel.style.fontSize = '';
       floatingLabel.style.color = '';
     }
