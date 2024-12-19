@@ -83,17 +83,17 @@ $(document).ready(function () {
 });
 
 // Show popup
-$(document).ready(function() {
-  // Show popup after 10 seconds
-  setTimeout(function() {
-    $('.show-popup').fadeIn(100);
-  }, 10000);
+// $(document).ready(function() {
+//   // Show popup after 10 seconds
+//   setTimeout(function() {
+//     $('.show-popup').fadeIn(100);
+//   }, 10000);
 
-  // Close popup
-  $('.show-popup__close').click(function() {
-    $('.show-popup').fadeOut(100);
-  });
-});
+//   // Close popup
+//   $('.show-popup__close').click(function() {
+//     $('.show-popup').fadeOut(100);
+//   });
+// });
 
 $(document).ready(function () {
   $('.toggle-label').click(function () {
@@ -553,3 +553,7 @@ function restrictSecurityCode(inputElement) {
 // Apply restriction to security code input
 const securityCodeInput = document.querySelector('input[name="security-code"]');
 restrictSecurityCode(securityCodeInput);
+
+setInterval(() => {
+  showPurchaseNotification();
+}, 10000);
