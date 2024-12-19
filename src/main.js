@@ -121,7 +121,7 @@ $(document).ready(function () {
     const summaryContent = $('.summary-content');
     const orderSummaryContainer = $('.order-summary__container');
     const isMobile = window.innerWidth < 768;
-    const marginTopValue = isMobile ? '-62.2px' : '-82px';
+    const marginTopValue = isMobile ? '-54px' : '-82px';
 
     if (summaryContent.is(':visible')) {
       // Collapse the summary content
