@@ -720,7 +720,7 @@ body {
 
 .product-details__feature-title {
 
-  font-family: 'Inter';
+ font-family: "Instrument Sans", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
@@ -732,7 +732,7 @@ body {
 .product-details__feature-description {
 
 
-  font-family: var(--font-family);
+  font-family: "Instrument Sans", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
