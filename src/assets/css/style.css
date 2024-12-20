@@ -2250,7 +2250,7 @@ select {
   display: flex;
   /* align-items: center; */
   justify-content: center;
-  gap: 27.61px;
+  gap: 12px;
   flex-direction: column;
   position: relative;
 }
@@ -3694,9 +3694,7 @@ select {
 
   }
 
-  .read-comment-feedback__item-container {
-    gap: 16.49px;
-  }
+
 
   .read-comment-feedback__item {}
 
@@ -3982,3 +3980,5 @@ select:-webkit-autofill:focus {
 .payment-method__details-item{
   overflow: hidden;
 }
+
+

@@ -253,7 +253,7 @@ $(document).ready(function () {
     { id: 'expiration-error', input: 'input[name="expiration-date"]' },
     { id: 'security-code-error', input: 'input[name="security-code"]' }
   ];
-
+console.log(fieldsToValidate[4])
   fieldsToValidate.forEach(field => {
     const inputElement = document.querySelector(field.input);
     inputElement.addEventListener('blur', function () {
@@ -313,11 +313,15 @@ $(document).ready(function () {
 
   function updateFloatingLabel() {
     const isMobile = window.innerWidth <= 768;
+    const hasPhoneError = document.getElementById('phone-error').style.display === 'block';
+
     if (phoneInput.value || document.activeElement === phoneInput) {
-      floatingLabel.style.top =  isMobile ? '24px' : '14px';
-      floatingLabel.style.fontSize = isMobile ? '14px' : '14px';
+      floatingLabel.style.top = isMobile ? '16px' : '14px';
+      floatingLabel.style.fontSize = isMobile ? '12px' : '14px';
+    } else if (hasPhoneError) {
+      floatingLabel.style.top = '36%'; // Set top to 36% if there's a phone error
     } else {
-      floatingLabel.style.top = isMobile ? '45%' : '36%';
+      floatingLabel.style.top = isMobile ? '45%' : '52%';
       floatingLabel.style.fontSize = '';
       floatingLabel.style.color = '';
     }
@@ -333,26 +337,30 @@ $(document).ready(function () {
     const $container = $(container);
     const scrollHeight = $container[0].scrollHeight / 2;
     let scrollAmount = direction === 'up' ? scrollHeight : 0;
+    const scrollSpeed = 0.5; // Adjust this value to control the speed (lower is slower)
 
-    $container.append($container.html());
+    // Check if the screen width is greater than 1024px
+    if (window.innerWidth > 1024) {
+      $container.append($container.html());
 
-    function scroll() {
-      if (direction === 'up') {
-        scrollAmount -= 1;
-        if (scrollAmount <= 0) {
-          scrollAmount = scrollHeight;
+      function scroll() {
+        if (direction === 'up') {
+          scrollAmount -= scrollSpeed;
+          if (scrollAmount <= 0) {
+            scrollAmount = scrollHeight;
+          }
+        } else {
+          scrollAmount += scrollSpeed;
+          if (scrollAmount >= scrollHeight) {
+            scrollAmount = 0;
+          }
         }
-      } else {
-        scrollAmount += 1;
-        if (scrollAmount >= scrollHeight) {
-          scrollAmount = 0;
-        }
+        $container.scrollTop(scrollAmount);
+        requestAnimationFrame(scroll);
       }
-      $container.scrollTop(scrollAmount);
-      requestAnimationFrame(scroll);
-    }
 
-    scroll();
+      scroll();
+    }
   }
 
   startMarquee('.marqueeTop', 'down');
