@@ -126,21 +126,21 @@ $(document).ready(function () {
 
     if (summaryContent.is(':visible')) {
       // Collapse the summary content
-      summaryContent.slideUp(400, function () {
+      summaryContent.slideUp(200, function () {
         // Animate margin-top and border-radius after collapsing
         orderSummaryContainer.animate({
           'margin-top': '0px',
           'border-radius': '4px'
-        }, 400);
+        }, 200);
       });
     } else {
       // Animate margin-top and border-radius before expanding
       orderSummaryContainer.animate({
         'margin-top': marginTopValue,
         'border-radius': '4px'
-      }, 400, function () {
+      }, 200, function () {
         // Expand the summary content
-        summaryContent.slideDown(400);
+        summaryContent.slideDown(200);
       });
     }
 
@@ -296,14 +296,14 @@ $(document).ready(function () {
   function showError(id) {
     const errorElement = document.getElementById(id);
     if (errorElement) {
-      errorElement.style.opacity = '1';
+      errorElement.style.display = 'block';
     }
   }
 
   function hideError(id) {
     const errorElement = document.getElementById(id);
     if (errorElement) {
-      errorElement.style.opacity = '0';
+      errorElement.style.display = 'none';
     }
   }
 
