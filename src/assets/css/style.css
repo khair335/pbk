@@ -1051,8 +1051,7 @@ body {
 .bundle-option.most-popular .bundle-option__most-popular img,
 .bundle-option.most-popular .bundle-option__content-price-extra,
 .bundle-option.best-deal .best-deal-text-selected-hover,
-.bundle-option.best-deal .bundle-option__best-deal img,
-.bundle-option.best-deal .bundle-option__content-price-extra {
+.bundle-option.best-deal .bundle-option__best-deal img {
   display: none;
 }
 .bundle-option.most-popular.selected .best-deal-text-selected-hover,
@@ -1073,8 +1072,7 @@ body {
 .bundle-option.most-popular:hover .bundle-option__most-popular img,
 .bundle-option.most-popular:hover .bundle-option__content-price-extra,
 .bundle-option.best-deal:hover .best-deal-text-selected-hover,
-.bundle-option.best-deal:hover .bundle-option__best-deal img,
-.bundle-option.best-deal:hover .bundle-option__content-price-extra {
+.bundle-option.best-deal:hover .bundle-option__best-deal img {
   display: block;
 }
 .input-container.input-container-phone{
