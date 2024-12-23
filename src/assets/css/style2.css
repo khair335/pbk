@@ -2138,7 +2138,7 @@ input[type="checkbox"]:checked+.custom-checkbox-label::before {
 
 .payment-method__details-item-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   width: 100%;
   padding-top: 12px;
