@@ -3396,19 +3396,19 @@ height: 20.73px;
   }
 
   .payment-method__option-radio {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 11px;
   }
 
   .payment-method__option-plus,
   .payment-method__option img {
-    max-width: 18.51px;
-    height: 11.69px;
-    min-width: 18.51px;
+                   max-width: 28.51px;
+        height: 18.69px;
+        min-width: 28.51px;
     border-radius: 1.59px;
 
-    font-size: 6.37609px;
-    line-height: 7px;
+    font-size: 10px;
+    line-height: 11px;
   }
 
   .payment-method__option-radio {
@@ -3476,8 +3476,8 @@ height: 20.73px;
 
   .payment-method__details-reach p,
   .payment-method__details-reach a {
-    font-size: 7px;
-    line-height: 9px;
+    font-size: 10px;
+    line-height: 12px;
     font-family: 'Roboto';
   }
 
