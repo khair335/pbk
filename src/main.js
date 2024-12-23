@@ -1,7 +1,7 @@
 let notificationShown = false;
 
 function showPurchaseNotification() {
-  // console.log("showPurchaseNotification");
+  console.log("showPurchaseNotification");
   if (!notificationShown) {
     $('.purchase-notification').show('slide', { direction: 'left' }, 500);
 
@@ -253,13 +253,13 @@ $(document).ready(function () {
     { id: 'expiration-error', input: 'input[name="expiration-date"]' },
     { id: 'security-code-error', input: 'input[name="security-code"]' }
   ];
-// console.log(fieldsToValidate[4])
-//   fieldsToValidate.forEach(field => {
-//     const inputElement = document.querySelector(field.input);
-//     inputElement.addEventListener('blur', function () {
-//       validateInput(inputElement, field.id);
-//     });
-//   });
+console.log(fieldsToValidate[4])
+  fieldsToValidate.forEach(field => {
+    const inputElement = document.querySelector(field.input);
+    inputElement.addEventListener('blur', function () {
+      validateInput(inputElement, field.id);
+    });
+  });
 
   // Form submission event
   document.querySelector('.complete-order').addEventListener('click', function (event) {
@@ -363,7 +363,7 @@ $(document).ready(function () {
         scroll();
       }
     } else {
-      // console.error('');
+      console.error('Element .marqueeTop not found');
     }
   }
 
