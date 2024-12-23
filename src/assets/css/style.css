@@ -2067,7 +2067,7 @@ select {
     font-size: 0;
   }
   100%{
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 .payment-method__details-item-container {
