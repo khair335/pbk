@@ -1,7 +1,7 @@
 let notificationShown = false;
 
 function showPurchaseNotification() {
-  console.log("showPurchaseNotification");
+  // console.log("showPurchaseNotification");
   if (!notificationShown) {
     $('.purchase-notification').show('slide', { direction: 'left' }, 500);
 
@@ -253,13 +253,13 @@ $(document).ready(function () {
     { id: 'expiration-error', input: 'input[name="expiration-date"]' },
     { id: 'security-code-error', input: 'input[name="security-code"]' }
   ];
-console.log(fieldsToValidate[4])
-  fieldsToValidate.forEach(field => {
-    const inputElement = document.querySelector(field.input);
-    inputElement.addEventListener('blur', function () {
-      validateInput(inputElement, field.id);
-    });
-  });
+// console.log(fieldsToValidate[4])
+//   fieldsToValidate.forEach(field => {
+//     const inputElement = document.querySelector(field.input);
+//     inputElement.addEventListener('blur', function () {
+//       validateInput(inputElement, field.id);
+//     });
+//   });
 
   // Form submission event
   document.querySelector('.complete-order').addEventListener('click', function (event) {
@@ -335,31 +335,35 @@ console.log(fieldsToValidate[4])
   // Marquee functionality
   function startMarquee(container, direction) {
     const $container = $(container);
-    const scrollHeight = $container[0].scrollHeight / 2;
-    let scrollAmount = direction === 'up' ? scrollHeight : 0;
-    const scrollSpeed = 0.5; // Adjust this value to control the speed (lower is slower)
+    if ($container.length) {
+      const scrollHeight = $container[0].scrollHeight / 2;
+      let scrollAmount = direction === 'up' ? scrollHeight : 0;
+      const scrollSpeed = 0.5; // Adjust this value to control the speed (lower is slower)
 
-    // Check if the screen width is greater than 1024px
-    if (window.innerWidth > 1024) {
-      $container.append($container.html());
+      // Check if the screen width is greater than 1024px
+      if (window.innerWidth > 1024) {
+        $container.append($container.html());
 
-      function scroll() {
-        if (direction === 'up') {
-          scrollAmount -= scrollSpeed;
-          if (scrollAmount <= 0) {
-            scrollAmount = scrollHeight;
+        function scroll() {
+          if (direction === 'up') {
+            scrollAmount -= scrollSpeed;
+            if (scrollAmount <= 0) {
+              scrollAmount = scrollHeight;
+            }
+          } else {
+            scrollAmount += scrollSpeed;
+            if (scrollAmount >= scrollHeight) {
+              scrollAmount = 0;
+            }
           }
-        } else {
-          scrollAmount += scrollSpeed;
-          if (scrollAmount >= scrollHeight) {
-            scrollAmount = 0;
-          }
+          $container.scrollTop(scrollAmount);
+          requestAnimationFrame(scroll);
         }
-        $container.scrollTop(scrollAmount);
-        requestAnimationFrame(scroll);
-      }
 
-      scroll();
+        scroll();
+      }
+    } else {
+      // console.error('');
     }
   }
 
