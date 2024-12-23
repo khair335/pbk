@@ -2600,7 +2600,7 @@ select {
   }
 
   .product-details {
-    padding: 85px 40px 63px 43px;
+    padding: 85px 40px 63px 40px;
   }
 
   .product-details__image {
@@ -2678,6 +2678,13 @@ select {
     flex-direction: row;
     margin-top: 19px;
     gap: 9.2px;
+    justify-content: flex-start;
+  }
+  .product-details__feature-icon{
+    width: 19.43px;
+height: 20.73px;
+
+
   }
 
   .product-details__review-images img {
@@ -2707,7 +2714,7 @@ select {
   }
 
   .product-details__feature-description {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .product-details__offer {
@@ -3052,6 +3059,7 @@ select {
 
   .product-details__feature-description {
     text-align: center;
+    font-size: 10px;
   }
 
   .product-details__features {
