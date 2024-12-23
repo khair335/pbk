@@ -2461,7 +2461,7 @@ select {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  text-align: left;
+  text-align: center;
 
   color: #000000;
 
@@ -3229,6 +3229,7 @@ select {
 @media (max-width: 767px) {
   .main {
     max-width: 320px;
+    margin-top: 0;
   }
 
   .product-details__image {
@@ -3999,7 +4000,7 @@ select {
   }
 
   .read-comment-feedback {
-    /* padding-top: 2px; */
+    padding-bottom: 20px;
   }
 
   .read-comment-feedback h2 {
@@ -4014,6 +4015,7 @@ select {
     max-width: 176px;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 10px;
 
 
   }
