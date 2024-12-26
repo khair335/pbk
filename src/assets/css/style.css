@@ -2275,7 +2275,7 @@ select {
 .read-comment-feedback__item-header {
   padding: 18.7px 20.13px 16.79px 20.46px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 1.09px solid #D0D0D0
 }
