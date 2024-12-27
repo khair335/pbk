@@ -338,7 +338,7 @@ $(document).ready(function () {
     if ($container.length) {
       const scrollHeight = $container[0].scrollHeight / 2;
       let scrollAmount = direction === 'up' ? scrollHeight : 0;
-      const scrollSpeed = 0.5; // Adjust this value to control the speed (lower is slower)
+      const scrollSpeed = 0.2; // Adjust this value to control the speed (lower is slower)
 
       // Check if the screen width is greater than 1024px
       if (window.innerWidth > 1024) {

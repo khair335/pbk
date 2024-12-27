@@ -2365,7 +2365,12 @@ select {
   border-radius: 8px;
   text-align: center;
 }
-
+.shipping-info.shipping-desktop{
+  display: block;
+}
+.shipping-info.shipping-mobile{
+  display: none;
+}
 .shipping-info h2 {
 
   font-family: 'Inter';
@@ -3242,6 +3247,16 @@ height: 20.73px;
   .read-comment-feedback__container-wrapper{
     max-height: 100%;
   }
+
+  .shipping-info.shipping-desktop{
+  display: none;
+}
+.shipping-info.shipping-mobile{
+  display: block;
+}
+.read-comment-feedback{
+  padding-top: 0;
+}
 }
 
 @media (max-width: 767px) {
