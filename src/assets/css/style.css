@@ -3204,7 +3204,19 @@ height: 20.73px;
     font-size: 11px;
     line-height: 15px;
   }
-
+.bundle-option.selected .bundle-option__content-button{
+   max-width: 87px;
+    height: 25px;
+    font-size: 11px;
+    line-height: 15px;
+}
+.bundle-option .bundle-option__content-button img{
+  width: 12px;
+  height: 10px;
+}
+.bundle-option.selected .bundle-option__content-button{
+  gap: 5px;
+}
   .bundle-option.best-deal .bundle-option__best-deal {
     height: 24px;
   }

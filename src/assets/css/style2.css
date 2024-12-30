@@ -1100,6 +1100,8 @@ height: 20.27px;
   height: 134px;
   border-right: 0.98px solid #E6E3FC;
   background-color: #F4F3FF;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -3260,6 +3262,9 @@ height: 20.73px;
 }
 
 @media (max-width: 767px) {
+ .bundle-options-2__item  .custom-radio{
+  padding-left: 18px;
+}
   .main {
     max-width: 320px;
     margin-top: 0;
@@ -4471,6 +4476,8 @@ margin-bottom: 27px;
 .read-comment-feedback__container-wrapper{
   height: auto;
 }
+
+
   .sm {
     display: block;
   }
@@ -4556,7 +4563,7 @@ select:-webkit-autofill:focus {
 
   .custom-radio-input:checked+.custom-radio-label::after {
     left: 2px;
-    top: 43%;
+    top: 42%;
     width: 8px;
     height: 8px;
     border: 3px solid #ffffff;
