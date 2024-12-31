@@ -3199,23 +3199,23 @@ height: 20.73px;
 
   .bundle-option button {
 
-    max-width: 87px;
-    height: 25px;
+    max-width: 93px;
+            height: 27.56px;
     font-size: 11px;
     line-height: 15px;
   }
 .bundle-option.selected .bundle-option__content-button{
-   max-width: 87px;
-    height: 25px;
+   max-width: 93px;
+            height: 27.56px;
     font-size: 11px;
     line-height: 15px;
 }
 .bundle-option .bundle-option__content-button img{
-  width: 12px;
-  height: 10px;
+          width: 8px;
+        height: 6.78px;
 }
 .bundle-option.selected .bundle-option__content-button{
-  gap: 5px;
+  gap: 2px;
 }
   .bundle-option.best-deal .bundle-option__best-deal {
     height: 24px;
