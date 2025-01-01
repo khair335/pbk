@@ -200,6 +200,7 @@ body {
   padding: 0px;
   gap: 3px;
   width: 100%;
+  background-color: #ffffff;
 }
 
 .purchase-notification__image {
