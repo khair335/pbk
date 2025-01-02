@@ -580,7 +580,7 @@ body {
   align-items: center;
 }
 
-/* .product-details__content ul li::before {
+/* .product-details__content ul li:before {
   content: '✅';
   margin-right: 4px;
 } */
@@ -1406,7 +1406,7 @@ input[type="checkbox"] {
 
 }
 
-.custom-checkbox-label::before {
+.custom-checkbox-label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -1418,7 +1418,7 @@ input[type="checkbox"] {
   border-radius: 3px;
 }
 
-input[type="checkbox"]:checked+.custom-checkbox-label::before {
+input[type="checkbox"]:checked+.custom-checkbox-label:before {
   background-color: #000;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="white" d="M6.173 11.414l-3.536-3.536 1.414-1.414 2.122 2.122 4.95-4.95 1.414 1.414-6.364 6.364z"/></svg>');
   background-size: 20px;
@@ -3394,11 +3394,11 @@ select {
     padding: 7.13px 20.33px 11px 20.33px;
   }
 
-  input[type="checkbox"]:checked+.custom-checkbox-label::before {
+  input[type="checkbox"]:checked+.custom-checkbox-label:before {
     background-size: 14px;
   }
 
-  .custom-checkbox-label::before {
+  .custom-checkbox-label:before {
     width: 12px;
     height: 12px;
   }
