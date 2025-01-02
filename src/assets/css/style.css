@@ -967,9 +967,14 @@ body {
   color: #585858;
   padding-bottom: 7px;
   text-align: left;
+  transition: color 0.3s ease-in-out;
 
 }
 
+.bundle-option:hover .bundle-option__content-price,
+.bundle-option.selected .bundle-option__content-price{
+  color: #000000;
+}
 .bundle-option__content-price-discount {
 
   font-family: 'Inter';
