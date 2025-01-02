@@ -2762,23 +2762,35 @@ select {
 
   .bundle-option__content-title h2 {
     font-size: 21px;
+    line-height: 25.41px;
   }
 
   .bundle-option__content-title p {
     font-size: 16px;
     text-align: left;
+    line-height: 19.36px;
   }
 
   .bundle-option__content-price {
     font-size: 21px;
+    line-height: 25.41px;
+    padding-bottom: 8.78px;
+
   }
 
   .bundle-option__content-price-discount {
     font-size: 16px;
+    line-height: 19.36px;
+    padding-bottom: 8.15px;
   }
 
   .bundle-option__content-price-original {
     font-size: 16px;
+    line-height: 19.36px;
+    padding-bottom: 8.15px;
+  }
+  .bundle-option__content-title{
+    padding-bottom: 37px;
   }
 
   .bundle-option__content-button {
@@ -2931,6 +2943,15 @@ select {
   }
   .bundle-option__content-price-container .bundle-option__content-price-extra{
     margin-top: -30px;
+  }
+
+  .read-comment-feedback h2{
+    max-width: 408px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .read-comment-feedback{
+    padding-top: 25.17px;
   }
 }
 
@@ -3172,6 +3193,8 @@ select {
 
   .bundle-option__content-title h2 {
     font-size: 16px;
+    line-height: 18.15px;
+    padding-bottom: 4px;
   }
 
   .bundle-option__container {
@@ -3193,13 +3216,14 @@ select {
     font-weight: 700;
     font-size: 11px;
     line-height: 13px;
+    padding-bottom: 0px;
 
 
 
   }
 
   .bundle-option__content-title {
-    padding-bottom: 16px;
+    padding-bottom: 17px;
   }
 
   .bundle-option__content-price {
@@ -3207,7 +3231,7 @@ select {
     font-weight: 700;
     font-size: 15px;
     line-height: 15px;
-    padding-bottom: 3px;
+    padding-bottom: 1px;
 
   }
 
@@ -3217,7 +3241,7 @@ select {
     font-size: 11px;
     line-height: 15px;
 
-    padding-bottom: 3px;
+    padding-bottom: 1px;
 
   }
 
@@ -3226,6 +3250,7 @@ select {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
+    padding-bottom: 12.72px;
 
 
 

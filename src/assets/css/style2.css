@@ -3278,6 +3278,14 @@ select {
   .custom-radio-input:checked+.custom-radio-label::after {
     top: 45.5px !important;
   }
+  .read-comment-feedback h2{
+    max-width: 408px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .read-comment-feedback{
+    padding-top: 24.12px;
+  }
 }
 
 @media (max-width: 820px) {
