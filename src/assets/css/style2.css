@@ -3260,6 +3260,10 @@ height: 20.73px;
 .read-comment-feedback{
   padding-top: 0;
 }
+
+.custom-radio-input:checked+.custom-radio-label::after{
+      top: 46.5px !important;
+}
 }
 
 @media (max-width: 767px) {
@@ -4564,7 +4568,7 @@ select:-webkit-autofill:focus {
 
   .custom-radio-input:checked+.custom-radio-label::after {
     left: 2px;
-    top: 42%;
+    top: 42% !important;
     width: 8px;
     height: 8px;
     border: 3px solid #ffffff;
