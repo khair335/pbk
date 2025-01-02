@@ -3246,7 +3246,12 @@ select {
   .bundle-options-2__item:after {
     height: 134px;
     width: 150px;
+   display: none;
 
+  }
+  .bundle-options-2__item:hover .bundle-options-2__item-discount{
+        border: 1px solid #E0E0E0;
+    background-color: #FAFAFA;
   }
 
   .read-comment-feedback__container-wrapper.auto-scroll {
@@ -3300,7 +3305,16 @@ select {
   .bundle-options-2__item .custom-radio {
     padding-right: 0px;
   }
+.bundle-options-2 h2{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 19.36px;
+text-align: left;
+padding-bottom: 15px;
 
+
+}
   .main {
     max-width: 320px;
     margin-top: 0;
@@ -3511,7 +3525,7 @@ select {
 
   .special-bundle__left-time {
     padding: 9px 10px;
-    margin-bottom: 16px;
+    margin-bottom: 27px;
   }
 
   .bundle-option__image {
@@ -4310,6 +4324,7 @@ select {
 
     font-size: 12px;
     line-height: 20px;
+    margin-top: -6px;
 
 
 
