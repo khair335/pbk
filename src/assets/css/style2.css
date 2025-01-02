@@ -3219,7 +3219,9 @@ select {
     padding: 11px 23px;
     gap: 10px;
   }
-
+.bundle-options-2__item:hover{
+  border: 0.98px solid #C5C5C5;
+}
   .bundle-options-2__item-content {
     gap: 10px;
   }
