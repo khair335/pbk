@@ -595,11 +595,11 @@ body {
 
 
 .product-details__review {
-  margin-top: 26px;
+  margin-top: 18px;
   text-align: center;
   background-color: #FFFFFf;
   border: 0.83px solid #C3BCFF;
-  padding: 26.65px 20px 20.32px 20px;
+  padding: 28.65px 20px 27.32px 20px;
   border-radius: 4px;
   display: flex;
 }
@@ -2792,7 +2792,7 @@ select {
 
   .product-details__features {
     flex-direction: column;
-    gap: 4px;
+    gap: 10px;
     margin-top: 14px;
   }
 
